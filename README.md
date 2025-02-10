@@ -61,4 +61,7 @@
 <p>
 <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=jassoncodes&show_icons=true&locale=en&layout=compact" alt="jassoncodes" />
 </p><p><img align="center" src="https://github-readme-stats.vercel.app/api?username=jassoncodes&show_icons=true&locale=en" alt="jassoncodes" />
-</p><p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=jassoncodes" alt="jassoncodes" /></p>
+</p>
+<p>
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=jassoncodes)](https://git.io/streak-stats)
+</p>
