@@ -63,5 +63,5 @@
 </p><p><img align="center" src="https://github-readme-stats.vercel.app/api?username=jassoncodes&show_icons=true&locale=en" alt="jassoncodes" />
 </p>
 <p>
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=jassoncodes)](https://git.io/streak-stats)
+[![GitHub Streak](https://streak-stats.demolab.com/?user=jassoncodes&theme=dark)](https://git.io/streak-stats)
 </p>
