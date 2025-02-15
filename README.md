@@ -1,7 +1,11 @@
+[<img alt="jassoncodes-banner" src="./public/cover.png">](http://jasson.codes)
+
 <h1 align="center">Hi 👋, I'm Jasson</h1>
-<h3 align="center">A passionate frontend developer from India</h3>
+<h3 align="center">A passionate frontend developer from Ecuador</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=jassoncodes&label=Profile%20views&color=0e75b6&style=flat" alt="jassoncodes" /> </p>
+
+[<img alt="Deployed with FTP Deploy Action" src="https://img.shields.io/badge/Deployed With-FTP DEPLOY ACTION-%3CCOLOR%3E?style=for-the-badge&color=0077b6">](https://github.com/SamKirkland/FTP-Deploy-Action)
 
 - 🔭 I’m currently working on **freelance projects**
 
