@@ -24,6 +24,7 @@ export const SideBar = () =>
                     <DropdownItem as='div' className="p-0"><NavLink className="d-flex flex-fill p-2 justify-content-center nav-link" to='/api/study'>/api/study</NavLink></DropdownItem>
                     <DropdownItem as='div' className="p-0"><NavLink className="d-flex flex-fill p-2 justify-content-center nav-link" to='/api/project'>/api/project</NavLink></DropdownItem>
                     <DropdownItem as='div' className="p-0"><NavLink className="d-flex flex-fill p-2 justify-content-center nav-link" to='/api/contact'>/api/contact</NavLink></DropdownItem>
+                    <DropdownItem as='div' className="p-0"><NavLink className="d-flex flex-fill p-2 justify-content-center nav-link" to='/api/data'>/api/data</NavLink></DropdownItem>
                 </DropdownButton>
             </Navbar>
 

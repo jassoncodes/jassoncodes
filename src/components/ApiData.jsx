@@ -1,10 +1,39 @@
+import { useState } from "react";
 import { ExploreApiButton } from "./api-doc/components/ExploreApiButton";
-import { Col, Container, Row } from "react-bootstrap"
+import { Button, Col, Container, Row } from "react-bootstrap"
 
-const endpoint = "/api/data";
+const apiRoute = "http://jasson.codes:6000/api/data";
 
 export const ApiData = () =>
 {
+    const [data, setData] = useState();
+
+    const getData = async () =>
+    {
+
+        setTimeout(async () =>
+        {
+            try
+            {
+                const dataReq = await fetch(apiRoute);
+
+                if (dataReq.status === 404)
+                {
+                    setErrors("No information found");
+                } else
+                {
+                    const res = await dataReq.json();
+                    setData(res);
+                }
+            } catch (err)
+            {
+                setErrors(`Error while fetching API: ${err.message}`);
+            }
+
+        }, 350)
+    }
+
+
     return (
         <Container className="p-2">
             <Row>
@@ -17,12 +46,13 @@ export const ApiData = () =>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi qui modi quidem facere tenetur vero blanditiis, unde reprehenderit explicabo quis at vitae minima, maxime officiis laboriosam? Eveniet autem rerum molestias.</p>
                 </Col>
             </Row>
-            <ExploreApiButton endpoint={endpoint} />
+            <Button onClick={getData}>Test /api/data</Button>
             <pre id="api-example-block" className='pre-scrollable p-4 my-2 border rounded'>
                 <code>
-
+                    {JSON.stringify(data)}
                 </code>
             </pre>
+            {console.log(JSON.stringify(data))}
         </Container>
     )
 }
