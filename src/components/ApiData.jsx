@@ -38,7 +38,7 @@ export const ApiData = () =>
         <Container className="p-2">
             <Row>
                 <Col>
-                    <h6 className="pb-2 border-bottom">{endpoint}</h6>
+                    <h6 className="pb-2 border-bottom">/api/data</h6>
                 </Col>
             </Row>
             <Row>
