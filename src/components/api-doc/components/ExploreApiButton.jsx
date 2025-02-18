@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Button, Col, Container, Row } from 'react-bootstrap';
 import { LoadingData } from '../../LoadingData';
+import dotenv from 'dotenv'
 
 const host = import.meta.env.VITE_APP_HOST
 const port = import.meta.env.VITE_APP_PORT
