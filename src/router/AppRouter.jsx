@@ -14,6 +14,7 @@ import { ApiContact } from '../components/api-doc/ApiContact'
 
 import { Error404 } from '../components/Error404'
 import { LiveResume } from '../components/live-resume/LiveResume'
+import { ApiData } from '../components/ApiData'
 
 
 
@@ -38,6 +39,7 @@ export const AppRouter = () =>
                         <Route path='study' element={<ApiStudy />} />
                         <Route path='project' element={<ApiProjects />} />
                         <Route path='contact' element={<ApiContact />} />
+                        <Route path='data' element={<ApiData />} />
                     </Route>
 
                     <Route path='/about' element={<AboutMe />} />
