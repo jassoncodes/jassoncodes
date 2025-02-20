@@ -1,95 +1,39 @@
-import React, { useEffect, useState } from 'react'
 import { Button, Col, Container, Row } from 'react-bootstrap';
-import { LoadingData } from '../../LoadingData';
 import dotenv from 'dotenv'
+import { getData } from '../../../utils';
 
 const host = import.meta.env.VITE_APP_HOST
 const port = import.meta.env.VITE_APP_PORT
 
-export const ExploreApiButton = ({ endpoint }) =>
+
+export const ExploreApiButton = ({ endpoint, onClick }) =>
 {
-
-    const apiRoute = `${host}:${port}${endpoint}`
-
-    const [isLoading, setIsLoading] = useState(true);
-    const [apiData, setApiData] = useState([]);
-    const [errors, setErrors] = useState("");
-
-    const hideElement = () =>
+    let apiRoute = host
+    if (port)
     {
-        const apiExampleBlock = document.getElementById('api-example-block')
-        apiExampleBlock.classList.add('d-none');
+        apiRoute += `:${port}`
     }
+    apiRoute += endpoint
 
-    const getData = async () =>
+    const handleClick = async () =>
     {
-        setIsLoading(true);
-        setTimeout(async () =>
+        try
         {
-            try
-            {
-                const dataReq = await fetch(apiRoute);
-
-                if (dataReq.status === 404)
-                {
-                    setErrors("No information found");
-                } else
-                {
-                    const data = await dataReq.json();
-                    setApiData(data);
-                    setIsLoading(false);
-                }
-            } catch (err)
-            {
-                setErrors(`Error while fetching API: ${err.message}`);
-            }
-
-        }, 350)
+            let data = await getData(apiRoute);
+            onClick(data);
+        } catch (error)
+        {
+            return error;
+        }
     }
 
-    const handleClick = (e) =>
-    {
-        e.preventDefault();
-        getData();
-        hideElement();
-    }
-
-    useEffect(() =>
-    {
-        setIsLoading(false);
-    }, []);
-
-    if (errors !== "")
-    {
-        return <div>{errors}</div>
-    } else if (isLoading)
-    {
-        return <LoadingData />
-    } else if (!isLoading && errors === "")
-    {
-        return (
-            <Container as='section' className='p-0'>
-                <Row>
-                    <Col>
-                        <Button variant='dark' onClick={handleClick}>Click here to explore the {endpoint} endpoint</Button>
-                    </Col>
-                </Row>
-                <Row className='d-flex flex-grow-0'>
-                    {
-                        <Col>
-                            {
-                                apiData.map((item, index) => (
-                                    <pre className='pre-scrollable p-4 my-2 border rounded' key={index}>
-                                        <code>
-                                            {JSON.stringify(item, null, 2)}
-                                        </code>
-                                    </pre>
-                                ))
-                            }
-                        </Col>
-                    }
-                </Row>
-            </Container>
-        )
-    }
+    return (
+        <Container as='section' className='p-0'>
+            <Row>
+                <Col>
+                    <Button variant='dark' onClick={async () => handleClick()}>Click here to explore the {endpoint} endpoint</Button>
+                </Col>
+            </Row>
+        </Container>
+    )
 }

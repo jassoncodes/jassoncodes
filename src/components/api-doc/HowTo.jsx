@@ -4,7 +4,12 @@ const host = import.meta.env.VITE_APP_HOST
 const port = import.meta.env.VITE_APP_PORT
 const endpoint = '/api/[endpoint]'
 
-const apiRoute = `${host}:${port}${endpoint}`
+let apiRoute = host
+if (port)
+{
+    apiRoute += `:${port}`
+}
+apiRoute += endpoint
 
 export const HowTo = () =>
 {

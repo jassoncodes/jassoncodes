@@ -14,8 +14,7 @@ import { ApiContact } from '../components/api-doc/ApiContact'
 
 import { Error404 } from '../components/Error404'
 import { LiveResume } from '../components/live-resume/LiveResume'
-import { ApiData } from '../components/ApiData'
-
+import { ApiData } from '../components/api-doc/ApiData'
 
 
 export const AppRouter = () =>

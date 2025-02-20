@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ExploreApiButton } from "./api-doc/components/ExploreApiButton";
+import { ExploreApiButton } from "./components/ExploreApiButton";
 import { Button, Col, Container, Row } from "react-bootstrap"
 
 const apiRoute = "http://jasson.codes:6000/api/data";
@@ -7,6 +7,7 @@ const apiRoute = "http://jasson.codes:6000/api/data";
 export const ApiData = () =>
 {
     const [data, setData] = useState();
+    const [errors, setErrors] = useState();
 
     const getData = async () =>
     {
@@ -47,12 +48,11 @@ export const ApiData = () =>
                 </Col>
             </Row>
             <Button onClick={getData}>Test /api/data</Button>
-            <pre id="api-example-block" className='pre-scrollable p-4 my-2 border rounded'>
+            <pre id="api-example-block" className={`pre-scrollable p-4 my-2 border rounded ${!data ? 'd-none' : undefined}`}>
                 <code>
                     {JSON.stringify(data)}
                 </code>
             </pre>
-            {console.log(JSON.stringify(data))}
         </Container>
     )
 }

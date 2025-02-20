@@ -1,31 +1,53 @@
-import { Col, Container, Row } from "react-bootstrap"
+import { useState } from "react"
+
+import { Container } from "react-bootstrap"
 import { apiAboutExampleValue } from "./data/ExampleValues"
 import { ExploreApiButton } from "./components/ExploreApiButton"
-import { Link } from "react-router-dom"
+import { EndpointDescription } from "./components/EndpointDescription"
+import { ENDPOINTS_INFO } from "./data/EndpointsDescriptions"
+
+import { ApiSampleData } from "./components/ApiSampleData"
+import { ApiDataResult } from "./components/ApiDataResult"
+import { getData } from "../../utils"
+import { LoadingData } from "../LoadingData"
+
 
 const endpoint = '/api/about'
 
 export const ApiAbout = () =>
 {
+    const [isLoading, setIsLoading] = useState(false);
+    const [apiData, setApiData] = useState([]);
+    const [errors, setErrors] = useState("");
+
+    const handleClick = (apiData) =>
+    {
+        setTimeout(() =>
+        {
+            setApiData(apiData);
+        }, 350);
+    }
+
+    // pendiente loading feature
     return (
         <Container className="p-2">
-            <Row>
-                <Col>
-                    <h6 className="pb-2 border-bottom">{endpoint}</h6>
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <p>This endpoint will get the information displayed in <Link className="text-decoration-none fw-bold text-dark" to={'/about'}>About Me</Link> section.</p>
-                    <p>Below is an example of the information returned by the API.</p>
-                </Col>
-            </Row>
-            <ExploreApiButton endpoint={endpoint} />
-            <pre id="api-example-block" className='pre-scrollable p-4 my-2 border rounded'>
-                <code>
-                    {JSON.stringify(apiAboutExampleValue, null, 2)}
-                </code>
-            </pre>
+            {errors
+                ? <div>{errors}</div>
+                : (
+                    isLoading
+                        ? <LoadingData />
+                        : <>
+                            <EndpointDescription endpoint={ENDPOINTS_INFO["about"]} />
+                            <ExploreApiButton endpoint={endpoint} onClick={handleClick} />
+                            {
+                                apiData.length > 0
+                                    ? <ApiDataResult apiResult={apiData} />
+                                    : <ApiSampleData sampleData={apiAboutExampleValue} />
+                            }
+                        </>
+                )
+            }
         </Container>
     )
+
 }
