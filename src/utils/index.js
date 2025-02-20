@@ -6,8 +6,9 @@ export const getData = async (apiRoute) => {
     const dataReq = await fetch(apiRoute);
 
     if (dataReq.status === 404) {
-      setErrors("No information found");
+      return "No information found";
     } else {
+      console.log(dataReq);
       const data = await dataReq.json();
       return data;
     }
