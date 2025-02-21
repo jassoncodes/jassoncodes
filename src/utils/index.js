@@ -5,10 +5,13 @@ export const getData = async (apiRoute) => {
   try {
     const dataReq = await fetch(apiRoute);
 
+    console.log("getData: ", dataReq);
+
     if (dataReq.status === 404) {
-      return "No information found";
+      return "Error: No information found";
+    } else if (dataReq.status === 204) {
+      return "Error: No content found";
     } else {
-      console.log(dataReq);
       const data = await dataReq.json();
       return data;
     }

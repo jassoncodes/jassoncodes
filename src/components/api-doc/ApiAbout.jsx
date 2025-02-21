@@ -47,7 +47,7 @@ export const ApiAbout = () =>
 
     // pendiente loading feature
     return (
-        <Container className="p-2 d-flex flex-column flex-gap">
+        <Container className="d-flex flex-column gap-2">
             <EndpointDescription endpoint={ENDPOINTS_INFO["about"]} />
             <ExploreApiButton endpoint={endpoint} onClick={handleClick} />
             {

@@ -4,9 +4,9 @@ export const EndpointDescription = ({ endpoint }) =>
 {
     return (
         <>
-            <Row>
+            <Row className="border-bottom py-3">
                 <Col>
-                    <h6 className="pb-2 border-bottom">
+                    <h6 className="m-auto">
                         {endpoint.path}
                     </h6>
                 </Col>

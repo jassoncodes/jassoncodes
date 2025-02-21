@@ -17,7 +17,7 @@ export const MainLayout = () =>
           </Col>
         </Row>
         <Row as={'main'}>
-          <Col className="d-flex justify-content-center text-center p-3">
+          <Col className="d-flex justify-content-center text-center p-0">
             <Outlet />
           </Col>
         </Row>

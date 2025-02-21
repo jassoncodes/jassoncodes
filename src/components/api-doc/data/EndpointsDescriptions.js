@@ -6,7 +6,7 @@ export const ENDPOINTS_INFO = {
   },
   contact: {
     description:
-      '<p>This endpoint returns all the information rendered in the <Link className="text-decoration-none fw-bold text-dark" to={"/contact"}>Contact </Link> section.</p><p>Below is an example of the information returned by the API.</p>',
+      'This endpoint returns all the information rendered in the <Link className="text-decoration-none fw-bold text-dark" to={"/contact"}>Contact </Link> section.</p><p>Below is an example of the information returned by the API.</p>',
   },
   experience: {
     description:
@@ -21,7 +21,8 @@ export const ENDPOINTS_INFO = {
       "<p>This endpoint will get the information regarding my previous experience in corporate IT.</p><p>Below is an example of the raw data returned by the API.</p>",
   },
   me: {
+    path: "Me (Live Resume)",
     description:
-      '<p>This endpoint gets all the information rendered in my <Link className="text-decoration-none fw-bold text-dark" to={"/live-resume"}>live resume</Link> including, experience, studies, projects and contact information.</p><p>Below is an example of the raw data returned by the API.</p>',
+      "This endpoint gets all the information rendered in my live resume. Below is an example of the raw data returned by the API.",
   },
 };
