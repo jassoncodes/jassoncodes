@@ -2,6 +2,7 @@ import { Col, Container, Row } from "react-bootstrap"
 import { useEffect, useState } from 'react'
 import { LoadingData } from "./LoadingData";
 import { capitalize } from "../utils";
+import { ErrorMessage } from "./api-doc/components/ErrorMessage";
 
 
 const host = import.meta.env.VITE_APP_HOST
@@ -76,7 +77,7 @@ export const Contact = () =>
 
     if (errors !== "")
     {
-        return <div>{errors}</div>
+        return <ErrorMessage message={errors} />
     }
     else if (isLoading)
     {

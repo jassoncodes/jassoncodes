@@ -8,7 +8,7 @@ import { HowTo } from '../components/api-doc/HowTo'
 import { ApiMe } from '../components/api-doc/ApiMe'
 import { ApiAbout } from '../components/api-doc/ApiAbout'
 import { ApiExperience } from '../components/api-doc/ApiExperience'
-import { ApiStudy } from '../components/api-doc/ApiStudy'
+import { ApiStudies } from '../components/api-doc/ApiStudies'
 import { ApiProjects } from '../components/api-doc/ApiProjects'
 import { ApiContact } from '../components/api-doc/ApiContact'
 
@@ -35,7 +35,7 @@ export const AppRouter = () =>
                         <Route path='me' element={<ApiMe />} />
                         <Route path='about' element={<ApiAbout />} />
                         <Route path='experience' element={<ApiExperience />} />
-                        <Route path='study' element={<ApiStudy />} />
+                        <Route path='studies' element={<ApiStudies />} />
                         <Route path='project' element={<ApiProjects />} />
                         <Route path='contact' element={<ApiContact />} />
                         <Route path='data' element={<ApiData />} />

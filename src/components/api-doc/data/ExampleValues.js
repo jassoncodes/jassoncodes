@@ -1,4 +1,4 @@
-const apiMeExampleValue = [
+export const apiMeExampleValue = [
   {
     about: [
       {
@@ -55,7 +55,7 @@ const apiMeExampleValue = [
   },
 ];
 
-const apiAboutExampleValue = [
+export const apiAboutExampleValue = [
   {
     name: "string",
     lastname: "string",
@@ -63,7 +63,7 @@ const apiAboutExampleValue = [
   },
 ];
 
-const apiContactExampleValue = [
+export const apiContactExampleValue = [
   {
     id: 0,
     email: "string",
@@ -73,7 +73,7 @@ const apiContactExampleValue = [
   },
 ];
 
-const apiExperienceExampleValue = [
+export const apiExperienceExampleValue = [
   {
     id: 0,
     title: "string",
@@ -91,7 +91,7 @@ const apiExperienceExampleValue = [
   },
 ];
 
-const apiStudyExampleValue = [
+export const apiStudiesExampleValue = [
   {
     id: 0,
     title: "string",
@@ -101,7 +101,7 @@ const apiStudyExampleValue = [
   },
 ];
 
-const apiProjectExampleValue = [
+export const apiProjectExampleValue = [
   {
     id: 0,
     title: "string",
@@ -111,12 +111,3 @@ const apiProjectExampleValue = [
     stack: "string",
   },
 ];
-
-export {
-  apiMeExampleValue,
-  apiAboutExampleValue,
-  apiContactExampleValue,
-  apiExperienceExampleValue,
-  apiStudyExampleValue,
-  apiProjectExampleValue,
-};

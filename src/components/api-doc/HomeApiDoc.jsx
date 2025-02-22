@@ -10,9 +10,9 @@ export const HomeApiDoc = () =>
 {
     return (
         <Container fluid as='section' className="h-100">
-            <Row>
+            <Row className="p-3">
                 <Col>
-                    <h4 className="m-0 p-2">
+                    <h4 className="m-0">
                         API Doc
                     </h4>
                 </Col>

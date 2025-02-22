@@ -5,20 +5,24 @@ export const ENDPOINTS_INFO = {
       "This endpoint will get the information displayed in the About me section. Below is an example of the raw data returned by the API.",
   },
   contact: {
+    path: "/api/contact",
     description:
-      'This endpoint returns all the information rendered in the <Link className="text-decoration-none fw-bold text-dark" to={"/contact"}>Contact </Link> section.</p><p>Below is an example of the information returned by the API.</p>',
+      "This endpoint returns all the information rendered in the Contact section. Below is an example of the information returned by the API.",
   },
   experience: {
+    path: "/api/experience",
     description:
-      "<p>This endpoint will get the information regarding my previous experience in corporate IT.</p><p>Below is an example of the raw data returned by the API.</p>",
+      "This endpoint will get the information regarding my previous experience in corporate IT. Below is an example of the raw data returned by the API.",
   },
   projects: {
+    path: "/api/projects",
     description:
-      "<p>This endpoint returns the information about the projects I have worked with or collaborated.</p><p>Below is an example of the raw data returned by the API.</p>",
+      "This endpoint returns the information about the projects I have worked with or collaborated. Below is an example of the raw data returned by the API.",
   },
-  study: {
+  studies: {
+    path: "/api/studies",
     description:
-      "<p>This endpoint will get the information regarding my previous experience in corporate IT.</p><p>Below is an example of the raw data returned by the API.</p>",
+      "his endpoint will get the information regarding my previous experience in corporate IT. Below is an example of the raw data returned by the API.",
   },
   me: {
     path: "api/me",

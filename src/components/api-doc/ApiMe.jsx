@@ -1,34 +1,18 @@
-import { Col, Container, Row } from "react-bootstrap"
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { Container } from "react-bootstrap"
 import { ExploreApiButton } from "./components/ExploreApiButton";
 import { apiMeExampleValue } from "./data/ExampleValues";
 import { EndpointDescription } from "./components/EndpointDescription";
 import { ENDPOINTS_INFO } from "./data/EndpointsDescriptions";
-import { useState } from "react";
-import { ApiSampleData } from "./components/ApiSampleData";
-import { LoadingData } from "../LoadingData";
-import { ApiDataResult } from "./components/ApiDataResult";
-import { ErrorMessage } from "./components/ErrorMessage";
+import { EndpointTestingSection } from "./components/EndpointTestingSection";
 
-const endpoint = '/api/me'
+const endpoint = ENDPOINTS_INFO["me"].path
 
 export const ApiMe = () =>
 {
     const [isLoading, setIsLoading] = useState(false);
     const [apiData, setApiData] = useState([]);
     const [errors, setErrors] = useState("");
-
-    const validateData = (apiData) =>
-    {
-        let valid = false;
-        apiData.map((endpoint) =>
-        {
-            if (endpoint.length == 0)
-            {
-                valid = !valid;
-            }
-        })
-    }
 
     const handleClick = (apiData) =>
     {
@@ -46,7 +30,6 @@ export const ApiMe = () =>
             }, 700);
         } catch (error)
         {
-            console.log(error)
             setErrors(error.message)
         }
     }
@@ -55,17 +38,12 @@ export const ApiMe = () =>
         <Container className="d-flex flex-column gap-2">
             <EndpointDescription endpoint={ENDPOINTS_INFO["me"]} />
             <ExploreApiButton endpoint={endpoint} onClick={handleClick} />
-            {
-                errors ? <ErrorMessage message={errors} />
-                    : (apiData.length > 0
-                        ? <ApiDataResult apiResult={apiData} />
-                        : (
-                            isLoading
-                                ? <LoadingData />
-                                : <ApiSampleData sampleData={apiMeExampleValue} />
-                        )
-                    )
-            }
+            <EndpointTestingSection
+                errors={errors}
+                apiData={apiData}
+                isLoading={isLoading}
+                apiExampleValue={apiMeExampleValue}
+            />
         </Container>
     )
 }

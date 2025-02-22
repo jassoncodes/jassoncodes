@@ -3,6 +3,7 @@ import { Button, Col, Row } from 'react-bootstrap'
 import Container from 'react-bootstrap/Container'
 import { LoadingData } from "./LoadingData";
 import { useNavigate } from 'react-router-dom';
+import { ErrorMessage } from './api-doc/components/ErrorMessage';
 
 
 
@@ -59,7 +60,7 @@ export const AboutMe = () =>
 
     if (errors !== "")
     {
-        return <div>{errors}</div>
+        return <ErrorMessage message={errors} />
     }
     else if (isLoading)
     {

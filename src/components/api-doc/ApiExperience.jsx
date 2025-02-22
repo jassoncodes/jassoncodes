@@ -1,30 +1,49 @@
-import { Col, Container, Row } from "react-bootstrap"
+import { useState } from "react"
+import { Container } from "react-bootstrap"
 import { apiExperienceExampleValue } from "./data/ExampleValues"
 import { ExploreApiButton } from "./components/ExploreApiButton"
+import { EndpointDescription } from "./components/EndpointDescription"
+import { ENDPOINTS_INFO } from "./data/EndpointsDescriptions"
+import { EndpointTestingSection } from "./components/EndpointTestingSection"
 
-const endpoint = '/api/experience'
+const endpoint = ENDPOINTS_INFO["experience"].path
 
 export const ApiExperience = () =>
 {
+    const [isLoading, setIsLoading] = useState(false);
+    const [apiData, setApiData] = useState([]);
+    const [errors, setErrors] = useState("");
+
+    const handleClick = (apiData) =>
+    {
+        setIsLoading(!isLoading);
+        try
+        {
+            setTimeout(() =>
+            {
+                if (typeof apiData === "string" && apiData.startsWith("Error"))
+                {
+                    setErrors(apiData)
+                }
+                setApiData(apiData);
+                setIsLoading(!isLoading);
+            }, 700);
+        } catch (error)
+        {
+            setErrors(error.message)
+        }
+    }
+
     return (
-        <Container className="p-2">
-            <Row>
-                <Col>
-                    <h6 className="pb-2 border-bottom">{endpoint}</h6>
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <p>This endpoint will get the information regarding my previous experience in corporate IT.</p>
-                    <p>Below is an example of the information returned by the API.</p>
-                </Col>
-            </Row>
-            <ExploreApiButton endpoint={endpoint} />
-            <pre id="api-example-block" className='pre-scrollable p-4 my-2 border rounded'>
-                <code>
-                    {JSON.stringify(apiExperienceExampleValue, null, 2)}
-                </code>
-            </pre>
+        <Container className="d-flex flex-column gap-2">
+            <EndpointDescription endpoint={ENDPOINTS_INFO["experience"]} />
+            <ExploreApiButton endpoint={endpoint} onClick={handleClick} />
+            <EndpointTestingSection
+                errors={errors}
+                apiData={apiData}
+                isLoading={isLoading}
+                apiExampleValue={apiExperienceExampleValue}
+            />
         </Container>
     )
 }
