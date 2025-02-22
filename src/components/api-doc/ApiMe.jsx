@@ -37,7 +37,7 @@ export const ApiMe = () =>
         {
             setTimeout(() =>
             {
-                if (apiData.startsWith("Error"))
+                if (typeof apiData === "string" && apiData.startsWith("Error"))
                 {
                     setErrors(apiData)
                 }

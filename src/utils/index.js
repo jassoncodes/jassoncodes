@@ -4,9 +4,6 @@ export const capitalize = (s) =>
 export const getData = async (apiRoute) => {
   try {
     const dataReq = await fetch(apiRoute);
-
-    console.log("getData: ", dataReq);
-
     if (dataReq.status === 404) {
       return "Error: No information found";
     } else if (dataReq.status === 204) {

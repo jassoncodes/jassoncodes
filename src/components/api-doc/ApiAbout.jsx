@@ -23,20 +23,17 @@ export const ApiAbout = () =>
 
     const handleClick = (apiData) =>
     {
+        setIsLoading(!isLoading);
         try
         {
-            setIsLoading(!isLoading);
             setTimeout(() =>
             {
-                setApiData(apiData);
-                if (apiData)
+                if (typeof apiData === "string" && apiData.startsWith("Error"))
                 {
-                    setIsLoading(!isLoading);
-                    if (apiData.startsWith("Error"))
-                    {
-                        setErrors(apiData)
-                    }
+                    setErrors(apiData)
                 }
+                setApiData(apiData);
+                setIsLoading(!isLoading);
             }, 700);
         } catch (error)
         {

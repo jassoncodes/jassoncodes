@@ -21,7 +21,7 @@ export const ENDPOINTS_INFO = {
       "<p>This endpoint will get the information regarding my previous experience in corporate IT.</p><p>Below is an example of the raw data returned by the API.</p>",
   },
   me: {
-    path: "Me (Live Resume)",
+    path: "api/me",
     description:
       "This endpoint gets all the information rendered in my live resume. Below is an example of the raw data returned by the API.",
   },
