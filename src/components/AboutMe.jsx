@@ -4,14 +4,12 @@ import Container from 'react-bootstrap/Container'
 import { LoadingData } from "./LoadingData";
 import { useNavigate } from 'react-router-dom';
 import { ErrorMessage } from './api-doc/components/ErrorMessage';
+import { ENDPOINTS_INFO } from './api-doc/data/EndpointsDescriptions';
+import { getApiURL, getData } from '../utils';
 
+const endpoint = ENDPOINTS_INFO["about"].path;
 
-
-const host = import.meta.env.VITE_APP_HOST
-const port = import.meta.env.VITE_APP_PORT
-const endpoint = '/api/about'
-
-const apiRoute = `${host}:${port}${endpoint}`
+const apiRoute = getApiURL(endpoint);
 
 export const AboutMe = () =>
 {
@@ -26,28 +24,20 @@ export const AboutMe = () =>
         {
             try
             {
-                const reqData = await fetch(apiRoute);
-                if (reqData.status === 404)
+                const data = await getData(apiRoute);
+                if (typeof (data) === "string" && data.startsWith("Error"))
                 {
-                    setErrors("No information found")
+                    setErrors(data)
                 } else
                 {
-                    const data = await reqData.json();
-
-                    setAboutData(data);
+                    setAboutData(data)
                 }
-                setIsLoading(false);
+                setIsLoading(!isLoading);
             } catch (err)
             {
                 setErrors(`Error while fetching API: ${err.message}`);
             }
-        }, 150)
-    }
-
-    const handleClick = (e) =>
-    {
-        e.preventDefault();
-        navigateTo('/contact');
+        }, 700)
     }
 
     useEffect(() =>
@@ -58,23 +48,23 @@ export const AboutMe = () =>
         }
     }, []);
 
-    if (errors !== "")
-    {
-        return <ErrorMessage message={errors} />
-    }
-    else if (isLoading)
-    {
-        return <LoadingData />
-    } else if (!isLoading && errors === "")
-    {
-        return (
-            <Container fluid as='section' className="h-100">
-                <Row>
-                    <Col>
-                        <h4 className="m-0 p-2">About me</h4>
-                    </Col>
-                </Row>
-                {aboutData.map((item, index) =>
+    return (
+        <Container fluid as='section' className="h-100">
+            <Row className="p-3">
+                <Col>
+                    <h4 className="m-0">
+                        About Me
+                    </h4>
+                </Col>
+            </Row>
+            {errors &&
+                <>
+                    <ErrorMessage message={errors} />
+                </>
+            }
+            {isLoading
+                ? <LoadingData />
+                : aboutData.map((item, index) =>
                 (
                     <Row key={index}>
                         <Col>
@@ -82,11 +72,11 @@ export const AboutMe = () =>
                             <span>{item.description}</span>
                         </Col>
                     </Row>
-                ))}
-                <Row className='my-5'>
-                    <Button onClick={handleClick} variant='dark' className='w-25 m-auto'>Contact</Button>
-                </Row>
-            </Container>
-        )
-    }
+                ))
+            }
+            <Row className='my-5'>
+                <Button onClick={() => navigateTo('/contact')} variant='dark' className='w-25 m-auto'>Contact</Button>
+            </Row>
+        </Container>
+    )
 }

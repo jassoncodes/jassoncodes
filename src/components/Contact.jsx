@@ -1,15 +1,14 @@
 import { Col, Container, Row } from "react-bootstrap"
 import { useEffect, useState } from 'react'
 import { LoadingData } from "./LoadingData";
-import { capitalize } from "../utils";
+import { capitalize, getApiURL, getData } from "../utils";
 import { ErrorMessage } from "./api-doc/components/ErrorMessage";
+import { ENDPOINTS_INFO } from "./api-doc/data/EndpointsDescriptions";
+import { ContactSection } from "./ContactSection";
 
+const endpoint = ENDPOINTS_INFO["contact"].path;
 
-const host = import.meta.env.VITE_APP_HOST
-const port = import.meta.env.VITE_APP_PORT
-const endpoint = '/api/contact'
-
-const apiRoute = `${host}:${port}${endpoint}`
+const apiRoute = getApiURL(endpoint);
 
 const icons = {
     'email': 'bi bi-inbox-fill',
@@ -23,23 +22,14 @@ const getIconClassName = (iconName) =>
     return icons[iconName];
 }
 
-const ContacInfoItem = ({ label, value }) =>
-(
-    <>
-        <div className="d-flex m-0 justify-content-center">
-            <i className={getIconClassName(label)}></i>
-            <h6 className="mx-2">{capitalize(label)}</h6>
-        </div>
-        <p className="m-0">{value}</p>
-    </>
-);
+
 
 
 
 export const Contact = () =>
 {
-    const [isLoading, setIsLoading] = useState(true);
     const [contactInfo, setContacInfo] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
     const [errors, setErrors] = useState("");
 
     const getContactInfoAsync = async () =>
@@ -48,22 +38,20 @@ export const Contact = () =>
         {
             try
             {
-                const dataReq = await fetch(apiRoute);
-
-                if (dataReq.status === 404)
+                const data = await getData(apiRoute);
+                if (typeof (data) === "string" && data.startsWith("Error"))
                 {
-                    setErrors("No contact information found");
+                    setErrors(data)
                 } else
                 {
-                    const data = await dataReq.json();
-                    setContacInfo(data);
+                    setContacInfo(data)
                 }
-                setIsLoading(false);
+                setIsLoading(!isLoading);
             } catch (err)
             {
                 setErrors(`Error while fetching API: ${err.message}`);
             }
-        }, 150)
+        }, 700)
 
     }
 
@@ -75,46 +63,26 @@ export const Contact = () =>
         }
     }, []);
 
-    if (errors !== "")
-    {
-        return <ErrorMessage message={errors} />
-    }
-    else if (isLoading)
-    {
-        return <LoadingData />
-    } else if (!isLoading && errors === "")
-    {
-        return (
-            <Container fluid as='section' className="h-100">
-                <Row>
-                    <Col>
-                        <h4 className="p-2 m-0">
-                            Contact
-                        </h4>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <p>Get in touch:</p>
-                    </Col>
-                </Row>
-                <Row className="py-2 text-center">
-                    {
-                        contactInfo.map((contactData) => (
-                            Object.entries(contactData).map(([key, value]) => (
-                                key !== "id" && (
-                                    <Col key={key} className="p-0 m-0">
-                                        <ContacInfoItem label={key} value={value} />
-                                    </Col>
-                                )
-                            ))
-                        ))
-                    }
-                </Row>
 
-            </Container>
-
-        )
-    }
+    return (
+        <Container fluid as='section' className="h-100">
+            <Row className="p-3">
+                <Col>
+                    <h4 className="m-0">
+                        Contact
+                    </h4>
+                </Col>
+            </Row>
+            {errors &&
+                <>
+                    <ErrorMessage message={errors} />
+                </>
+            }
+            {isLoading
+                ? <LoadingData />
+                : <ContactSection contactInfo={contactInfo} />
+            }
+        </Container>
+    )
 }
 

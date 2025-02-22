@@ -16,3 +16,16 @@ export const getData = async (apiRoute) => {
     return `Error while fetching API: ${err.message}`;
   }
 };
+
+export const getApiURL = (endpoint) => {
+  const host = import.meta.env.VITE_APP_HOST;
+  const port = import.meta.env.VITE_APP_PORT;
+
+  let apiRoute = host;
+  if (port) {
+    apiRoute += `:${port}`;
+  } else {
+    apiRoute += endpoint;
+  }
+  return apiRoute;
+};
