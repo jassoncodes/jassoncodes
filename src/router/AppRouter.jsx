@@ -27,10 +27,6 @@ export const AppRouter = () =>
 
                     <Route path='/' element={<HomeApiDoc />}>
                         <Route index element={<HowTo />} />
-                    </Route>
-
-                    <Route path='api' element={<HomeApiDoc />}>
-                        <Route index element={<HowTo />} />
                         <Route path='how-to' element={<HowTo />} />
                         <Route path='me' element={<ApiMe />} />
                         <Route path='about' element={<ApiAbout />} />
@@ -40,6 +36,18 @@ export const AppRouter = () =>
                         <Route path='contact' element={<ApiContact />} />
                         <Route path='data' element={<ApiData />} />
                     </Route>
+
+                    {/* <Route path='api' element={<HomeApiDoc />}>
+                        <Route index element={<HowTo />} />
+                        <Route path='how-to' element={<HowTo />} />
+                        <Route path='me' element={<ApiMe />} />
+                        <Route path='about' element={<ApiAbout />} />
+                        <Route path='experience' element={<ApiExperience />} />
+                        <Route path='studies' element={<ApiStudies />} />
+                        <Route path='project' element={<ApiProjects />} />
+                        <Route path='contact' element={<ApiContact />} />
+                        <Route path='data' element={<ApiData />} />
+                    </Route> */}
 
                     <Route path='/about' element={<AboutMe />} />
                     <Route path='/contact' element={<Contact />} />

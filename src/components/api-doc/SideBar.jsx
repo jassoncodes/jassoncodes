@@ -14,16 +14,16 @@ export const SideBar = () =>
             className="d-flex flex-column"
         >
             <ListGroup.Item action>
-                <NavLink className="d-flex flex-fill p-2 justify-content-center nav-link border-bottom mb-2" to={"/api/how-to"}>How to use?</NavLink>
+                <NavLink className="d-flex flex-fill p-2 justify-content-center nav-link border-bottom mb-2" to={"/how-to"}>How to use?</NavLink>
             </ListGroup.Item>
-            <DropdownButton title='/api' className="d-flex flex-fill justify-content-center" variant='flush'>
-                <DropdownItem as='div' className="p-0"><NavLink className="d-flex flex-fill p-2 justify-content-center nav-link" to={"/api/me"}>/api/me</NavLink></DropdownItem>
-                <DropdownItem as='div' className="p-0"><NavLink className="d-flex flex-fill p-2 justify-content-center nav-link" to="/api/about">/api/about</NavLink></DropdownItem>
-                <DropdownItem as='div' className="p-0"><NavLink className="d-flex flex-fill p-2 justify-content-center nav-link" to="/api/experience">/api/experience</NavLink></DropdownItem>
-                <DropdownItem as='div' className="p-0"><NavLink className="d-flex flex-fill p-2 justify-content-center nav-link" to='/api/studies'>/api/studies</NavLink></DropdownItem>
-                <DropdownItem as='div' className="p-0"><NavLink className="d-flex flex-fill p-2 justify-content-center nav-link" to='/api/project'>/api/project</NavLink></DropdownItem>
-                <DropdownItem as='div' className="p-0"><NavLink className="d-flex flex-fill p-2 justify-content-center nav-link" to='/api/contact'>/api/contact</NavLink></DropdownItem>
-                <DropdownItem as='div' className="p-0"><NavLink className="d-flex flex-fill p-2 justify-content-center nav-link" to='/api/data'>/api/data</NavLink></DropdownItem>
+            <DropdownButton title='select' className="d-flex flex-fill justify-content-center" variant='flush'>
+                <DropdownItem as='div' className="p-0"><NavLink className="d-flex flex-fill p-2 justify-content-center nav-link" to={"/me"}>/api/me</NavLink></DropdownItem>
+                <DropdownItem as='div' className="p-0"><NavLink className="d-flex flex-fill p-2 justify-content-center nav-link" to="/about">/api/about</NavLink></DropdownItem>
+                <DropdownItem as='div' className="p-0"><NavLink className="d-flex flex-fill p-2 justify-content-center nav-link" to="/experience">/api/experience</NavLink></DropdownItem>
+                <DropdownItem as='div' className="p-0"><NavLink className="d-flex flex-fill p-2 justify-content-center nav-link" to='/studies'>/api/studies</NavLink></DropdownItem>
+                <DropdownItem as='div' className="p-0"><NavLink className="d-flex flex-fill p-2 justify-content-center nav-link" to='/project'>/api/project</NavLink></DropdownItem>
+                <DropdownItem as='div' className="p-0"><NavLink className="d-flex flex-fill p-2 justify-content-center nav-link" to='/contact'>/api/contact</NavLink></DropdownItem>
+                <DropdownItem as='div' className="p-0"><NavLink className="d-flex flex-fill p-2 justify-content-center nav-link" to='/data'>/api/data</NavLink></DropdownItem>
             </DropdownButton>
         </Navbar>
     )

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { ExploreApiButton } from "./components/ExploreApiButton";
 import { Button, Col, Container, Row } from "react-bootstrap"
 
-const apiRoute = "http://jasson.codes:6000/api/data";
+const apiRoute = "http://localhost:5000/data";
 
 export const ApiData = () =>
 {
@@ -50,7 +50,7 @@ export const ApiData = () =>
             <Button onClick={getData}>Test /api/data</Button>
             <pre id="api-example-block" className={`pre-scrollable p-4 my-2 border rounded ${!data ? 'd-none' : undefined}`}>
                 <code>
-                    {JSON.stringify(data)}
+                    {JSON.stringify(data, null, 2)}
                 </code>
             </pre>
         </Container>

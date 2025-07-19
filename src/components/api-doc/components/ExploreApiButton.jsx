@@ -5,7 +5,6 @@ import { getData } from '../../../utils';
 const host = import.meta.env.VITE_APP_HOST
 const port = import.meta.env.VITE_APP_PORT
 
-
 export const ExploreApiButton = ({ endpoint, onClick }) =>
 {
     let apiRoute = host
