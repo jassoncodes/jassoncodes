@@ -18,8 +18,8 @@ export const getData = async (apiRoute) => {
 };
 
 export const getApiURL = (endpoint) => {
-  const host = import.meta.env.VITE_APP_HOST;
-  const port = import.meta.env.VITE_APP_PORT;
+  const host = import.meta.env.VITE_API_APP_HOST;
+  const port = import.meta.env.VITE_API_APP_PORT;
 
   let apiRoute = host;
   if (port) {

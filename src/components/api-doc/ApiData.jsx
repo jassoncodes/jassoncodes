@@ -2,12 +2,22 @@ import { useState } from "react";
 import { ExploreApiButton } from "./components/ExploreApiButton";
 import { Button, Col, Container, Row } from "react-bootstrap"
 
-const apiRoute = "http://localhost:5000/data";
+const host = import.meta.env.VITE_API_APP_HOST
+const port = import.meta.env.VITE_API_APP_PORT
+const endpoint = "/api/data";
 
 export const ApiData = () =>
 {
     const [data, setData] = useState();
     const [errors, setErrors] = useState();
+
+    let apiRoute = host
+    if (port)
+    {
+        apiRoute += `:${port}`
+    }
+    apiRoute += endpoint
+    console.log(apiRoute)
 
     const getData = async () =>
     {

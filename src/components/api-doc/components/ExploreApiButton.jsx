@@ -2,12 +2,13 @@ import { Button, Col, Container, Row } from 'react-bootstrap';
 import dotenv from 'dotenv'
 import { getData } from '../../../utils';
 
-const host = import.meta.env.VITE_APP_HOST
-const port = import.meta.env.VITE_APP_PORT
+const host = import.meta.env.VITE_API_APP_HOST
+const base_path = import.meta.VITE_API_APP_BASE_PATH
+const port = import.meta.env.VITE_API_APP_PORT
 
 export const ExploreApiButton = ({ endpoint, onClick }) =>
 {
-    let apiRoute = host
+    let apiRoute = `${host}${base_path}` //TODO: generates http://localhostundefined:5000/api/me
     if (port)
     {
         apiRoute += `:${port}`

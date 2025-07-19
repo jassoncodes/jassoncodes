@@ -1,7 +1,7 @@
 import { Card, Container } from "react-bootstrap"
 
-const host = import.meta.env.VITE_APP_HOST
-const port = import.meta.env.VITE_APP_PORT
+const host = import.meta.env.VITE_API_APP_HOST
+const port = import.meta.env.VITE_API_APP_PORT
 const endpoint = '/api/[endpoint]'
 
 let apiRoute = host

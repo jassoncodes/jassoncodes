@@ -8,8 +8,8 @@ import { LiveResumeProjects } from "./components/LiveResumeProjects"
 import { LiveResumeStudies } from "./components/LiveResumeStudies"
 import { Error404 } from "../Error404"
 
-const host = import.meta.env.VITE_APP_HOST
-const port = import.meta.env.VITE_APP_PORT
+const host = import.meta.env.VITE_API_APP_HOST
+const port = import.meta.env.VITE_API_APP_PORT
 
 const endpoint = '/api/me'
 
