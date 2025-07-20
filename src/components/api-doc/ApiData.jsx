@@ -17,7 +17,6 @@ export const ApiData = () =>
         apiRoute += `:${port}`
     }
     apiRoute += endpoint
-    console.log(apiRoute)
 
     const getData = async () =>
     {

@@ -17,8 +17,8 @@ export const AppHeader = () =>
                     <Nav>
                         <NavLink to="/api" className='nav-link' onClick={() => setTimeout(() => { setIsExpanded(false) }, 150)} >API Doc</NavLink>
                         <NavLink to="/live-resume" className='nav-link' onClick={() => setTimeout(() => { setIsExpanded(false) }, 150)} >Live Resume</NavLink>
-                        <NavLink to="/about" className='nav-link' onClick={() => setTimeout(() => { setIsExpanded(false) }, 150)}>About me</NavLink>
-                        <NavLink to="/contact" className='nav-link' onClick={() => setTimeout(() => { setIsExpanded(false) }, 150)}>Contact</NavLink>
+                        <NavLink to="/aboutme" className='nav-link' onClick={() => setTimeout(() => { setIsExpanded(false) }, 150)}>About me</NavLink>
+                        <NavLink to="/contactme" className='nav-link' onClick={() => setTimeout(() => { setIsExpanded(false) }, 150)}>Contact</NavLink>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

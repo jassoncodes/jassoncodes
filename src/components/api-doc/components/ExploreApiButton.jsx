@@ -14,8 +14,6 @@ export const ExploreApiButton = ({ endpoint, onClick }) =>
     }
     apiRoute += endpoint
 
-    console.log(apiRoute)
-
     const handleClick = async () =>
     {
         try

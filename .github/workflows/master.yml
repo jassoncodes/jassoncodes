@@ -17,15 +17,14 @@ jobs:
         with:
           node-version: "22"
 
+      - name: ⚙️ Configure environment variables
+        run: |
+          echo "VITE_API_APP_HOST=${{ secrets.VITE_API_APP_HOST }}" >> .env
+
       - name: 🔨 Build Project
         run: |
           npm install
           npm run build
-
-      - name: ⚙️ Configure environment variables
-        run: |
-          echo "VITE_API_URL=${{ secrets.VITE_API_URL }}" >> .env
-          echo "VITE_APP_PORT=${{ secrets.VITE_OTHER_SECRET }}" >> .env
 
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
