@@ -1,5 +1,5 @@
 import { Button, Col, Container, Row } from 'react-bootstrap';
-import { getData } from '../../../utils';
+import { getApiURL, getData } from '../../../utils';
 
 
 export const ExploreApiButton = ({ endpoint, onClick }) =>
