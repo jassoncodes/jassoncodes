@@ -1,18 +1,43 @@
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
 [<img alt="jassoncodes-banner" src="./public/cover.png">](http://jasson.codes)
 
 <h1 align="center">Hi 👋, I'm Jasson</h1>
-<h3 align="center">A passionate frontend developer from Ecuador</h3>
+<h3 align="center">Software Developer | Software Engineer | Full Stack Developer</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=jassoncodes&label=Profile%20views&color=0e75b6&style=flat" alt="jassoncodes" /> </p>
+<img src="https://komarev.com/ghpvc/?username=jassoncodes&label=Profile%20views&color=0e75b6&style=flat" alt="jassoncodes" />
 
 [<img alt="Deployed with FTP Deploy Action" src="https://img.shields.io/badge/Deployed With-FTP DEPLOY ACTION-%3CCOLOR%3E?style=for-the-badge&color=0077b6">](https://github.com/SamKirkland/FTP-Deploy-Action)
 
-- 🔭 I’m currently working on **freelance projects**
+<p>
+I'm a bilingual (English/Spanish) results-driven software engineer with hands-on experience in backend, frontend, and automation development. Skilled in full-stack web development, RESTful API design, and system integration using technologies like .NET Core, C#, JavaScript, and SQL. Proven ability to optimize workflows, automate manual tasks, and enhance system efficiency across healthcare and financial sectors. Passionate about solving real-world problems through clean, maintainable, and scalable software solutions.
+</p>
+
+🔭 I’m currently working on freelance projects
+
+🚀 I'm always learning new things and new ways to improve my skills
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-<a href="https://linkedin.com/in/jassoncodes" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="jassoncodes" height="30" width="40" /></a>
-<a href="https://instagram.com/jassoncodes" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="jassoncodes" height="30" width="40" /></a>
+<ul>
+<li style="list-style: none;">
+<a href="https://jasson.codes"><i class="fa-solid fa-earth-americas"></i> https://jasson.codes</a>
+</li>
+<li style="list-style: none;">
+<a href="mailto:jasson.codes@gmail.com" target="blank"><i class="fa-solid fa-envelope"></i> jasson.codes@gmail.com</a>
+</li>
+
+<li style="list-style: none;">
+<a href="https://linkedin.com/in/jassoncodes" target="blank"><i class="fa-brands fa-linkedin"></i> jassoncodes</a>
+</li>
+
+<li style="list-style: none;">
+<a href="https://instagram.com/jassoncodes" target="blank">
+<i class="fa-brands fa-instagram"></i> jasson.codes</a>
+</li>
+</ul>
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
