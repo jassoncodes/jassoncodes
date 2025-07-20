@@ -37,12 +37,12 @@ export const AppRouter = () =>
                         <Route path='data' element={<ApiData />} />
                     </Route>
 
-                    <Route path='/aboutme' element={<AboutMe />} />
-                    <Route path='/contactme' element={<Contact />} />
-                    <Route path='*' element={<Error404 />} />
+                    <Route path='live-resume' element={<LiveResume />} />
+                    <Route path='aboutme' element={<AboutMe />} />
+                    <Route path='contactme' element={<Contact />} />
 
+                    <Route path='*' element={<Error404 />} />
                 </Route>
-                <Route path='live-resume' element={<LiveResume />} />
             </Routes>
 
         </BrowserRouter>

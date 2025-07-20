@@ -15,7 +15,7 @@ export const AppHeader = () =>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setIsExpanded(!isExpanded)} />
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                     <Nav>
-                        <NavLink to="/api" className='nav-link' onClick={() => setTimeout(() => { setIsExpanded(false) }, 150)} >API Doc</NavLink>
+                        <NavLink to="/" className='nav-link' onClick={() => setTimeout(() => { setIsExpanded(false) }, 150)} >Home</NavLink>
                         <NavLink to="/live-resume" className='nav-link' onClick={() => setTimeout(() => { setIsExpanded(false) }, 150)} >Live Resume</NavLink>
                         <NavLink to="/aboutme" className='nav-link' onClick={() => setTimeout(() => { setIsExpanded(false) }, 150)}>About me</NavLink>
                         <NavLink to="/contactme" className='nav-link' onClick={() => setTimeout(() => { setIsExpanded(false) }, 150)}>Contact</NavLink>

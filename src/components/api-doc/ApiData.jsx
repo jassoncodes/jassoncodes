@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Button, Col, Container, Row } from "react-bootstrap"
+import { getApiURL } from "../../utils";
 
 const endpoint = "/api/data";
 
