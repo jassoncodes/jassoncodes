@@ -15,8 +15,15 @@ const endpoint = '/api/me'
 
 export const LiveResume = () =>
 {
-    const apiRoute = `${host}:${port}${endpoint}`
+    let apiRoute = `${host}`
+    if (port)
+    {
+        apiRoute += `:${port}`
+    }
+    apiRoute += endpoint
 
+
+    console.log(apiRoute)
     const [isLoading, setIsLoading] = useState(true);
     const [errors, setErrors] = useState("");
 

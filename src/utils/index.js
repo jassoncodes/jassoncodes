@@ -29,3 +29,14 @@ export const getApiURL = (endpoint) => {
   }
   return apiRoute;
 };
+
+const icons = {
+  email: "bi bi-inbox-fill",
+  phone: "bi bi-whatsapp",
+  github: "bi bi-github",
+  linkedin: "bi bi-linkedin",
+};
+
+export const getIconClassName = (iconName) => {
+  return icons[iconName];
+};

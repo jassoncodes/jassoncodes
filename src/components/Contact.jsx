@@ -10,22 +10,6 @@ const endpoint = ENDPOINTS_INFO["contact"].path;
 
 const apiRoute = getApiURL(endpoint);
 
-const icons = {
-    'email': 'bi bi-inbox-fill',
-    'phone': 'bi bi-whatsapp',
-    'github': 'bi bi-github',
-    'linkedin': 'bi bi-linkedin'
-}
-
-const getIconClassName = (iconName) =>
-{
-    return icons[iconName];
-}
-
-
-
-
-
 export const Contact = () =>
 {
     const [contactInfo, setContacInfo] = useState([]);

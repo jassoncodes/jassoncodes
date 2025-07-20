@@ -75,7 +75,7 @@ export const AboutMe = () =>
                 ))
             }
             <Row className='my-5'>
-                <Button onClick={() => navigateTo('/contact')} variant='dark' className='w-25 m-auto'>Contact</Button>
+                <Button onClick={() => navigateTo('/contactme')} variant='dark' className='w-25 m-auto'>Contact</Button>
             </Row>
         </Container>
     )

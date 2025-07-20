@@ -1,4 +1,4 @@
-import React from 'react'
+import { capitalize, getIconClassName } from '../utils'
 
 export const ContactInfoItem = () =>
 {
