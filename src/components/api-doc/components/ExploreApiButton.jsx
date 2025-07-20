@@ -8,12 +8,14 @@ const port = import.meta.env.VITE_API_APP_PORT
 
 export const ExploreApiButton = ({ endpoint, onClick }) =>
 {
-    let apiRoute = `${host}${base_path}` //TODO: generates http://localhostundefined:5000/api/me 
+    let apiRoute = `${host}` //TODO: generates http://localhostundefined:5000/api/me 
     if (port)
     {
         apiRoute += `:${port}`
     }
     apiRoute += endpoint
+
+    console.log(apiRoute)
 
     const handleClick = async () =>
     {
