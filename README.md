@@ -118,9 +118,3 @@
 </div>
 
 ###
-
-<br clear="both">
-
-<img src="https://raw.githubusercontent.com/jassoncodes/jassoncodes/output/snake.svg" alt="Snake animation" />
-
-###
