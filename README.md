@@ -8,8 +8,8 @@
 
 ###
 
-<div align="left">
-  <img src="https://visitor-badge.laobi.icu/badge?page_id=jassoncodes.jassoncodes&"  />
+<div align="right">
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=jassoncodes.jassoncodes&"  />  
 </div>
 
 ###
@@ -35,12 +35,12 @@ I’m all about solving real problems with practical, maintainable code—and co
   <a href="https://www.linkedin.com/in/jassoncodes/" target="blank" style="text-decoration:none">
   <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linkedin logo"  />
   </a>
-  <a href="mailto:jasson.codes@gmail.com" style="text-decoration:none">
+  <a href="mailto:jassoncodes@gmail.com" style="text-decoration:none">
   <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="gmail logo"  />
   </a>
-  <a href="https://www.instagram.com/jasson.codes/" style="text-decoration:none">
+  <a href="https://www.instagram.com/jassoncodes/" style="text-decoration:none">
   <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="instagram logo"  />
-  </a>  
+  </a>
 </div>
 
 ###
