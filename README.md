@@ -2,14 +2,17 @@
 
 ###
 
+<div style="display: flex; justify-content: space-between; gap: 25px; align-items: center;">
 <h2>Software Developer | Software Engineer | Full Stack Developer</h2>
+<img src="https://visitor-badge.laobi.icu/badge?page_id=jassoncodes.jassoncodes&"  />
+
+</div>
 
 <h3 align="center">Hi 👋! I'm Jasson. I love creating things, solving problems, and turning ideas into code 🧑🏻‍💻</h3>
 
 ###
 
 <div align="right">
-  <img src="https://visitor-badge.laobi.icu/badge?page_id=jassoncodes.jassoncodes&"  />  
 </div>
 
 ###
