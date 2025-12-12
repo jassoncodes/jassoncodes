@@ -1,10 +1,9 @@
 /* eslint-disable react/prop-types */
 
-export const Logo = ({ color }) =>
+export const Logo = () =>
 {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="465" zoomAndPan="magnify"
-            fill={color} viewBox="0 0 348.75 63.749997" height="85" preserveAspectRatio="xMidYMid meet" version="1.0">
+        <svg id="logo" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="465" zoomAndPan="magnify" viewBox="0 0 350 65" height="85" preserveAspectRatio="xMidYMid meet" version="1.0">
             <defs>
                 <g />
                 <clipPath id="5734dcf6ed">
@@ -13,7 +12,7 @@ export const Logo = ({ color }) =>
             </defs>
             <g transform="matrix(1, 0, 0, 1, 29, 10)">
                 <g clipPath="url(#5734dcf6ed)">
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(1.546624, 3.431932)">
                             <g />
                         </g>
@@ -207,7 +206,7 @@ export const Logo = ({ color }) =>
                             <g />
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(161.488327, 3.431932)">
                             <g>
                                 <path d="M 0 0.390625 L 0 0.09375 L 2.5 0.09375 L 2.5 0.390625 Z M 0 0.390625 " />
@@ -219,7 +218,7 @@ export const Logo = ({ color }) =>
                             </g>
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(166.489206, 3.431932)">
                             <g />
                         </g>
@@ -368,12 +367,12 @@ export const Logo = ({ color }) =>
                             <g />
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(1.546624, 8.270795)">
                             <g />
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(4.047063, 8.270795)">
                             <g>
                                 <path d="M 0 0.390625 L 0 0.09375 L 2.5 0.09375 L 2.5 0.390625 Z M 0 0.390625 " />
@@ -385,7 +384,7 @@ export const Logo = ({ color }) =>
                             </g>
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(9.047942, 8.270795)">
                             <g />
                         </g>
@@ -567,7 +566,7 @@ export const Logo = ({ color }) =>
                             <g />
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(158.993288, 8.270795)">
                             <g>
                                 <path
@@ -590,7 +589,7 @@ export const Logo = ({ color }) =>
                             </g>
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(168.989647, 8.270795)">
                             <g />
                         </g>
@@ -736,7 +735,7 @@ export const Logo = ({ color }) =>
                             <g />
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(1.525022, 13.109658)">
                             <g>
                                 <path
@@ -761,7 +760,7 @@ export const Logo = ({ color }) =>
                             </g>
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(11.521378, 13.109658)">
                             <g />
                         </g>
@@ -778,7 +777,7 @@ export const Logo = ({ color }) =>
                             <g />
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(24.018174, 13.109658)">
                             <g>
                                 <path d="M 0 0.390625 L 0 0.09375 L 2.5 0.09375 L 2.5 0.390625 Z M 0 0.390625 " />
@@ -790,7 +789,7 @@ export const Logo = ({ color }) =>
                             </g>
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(29.019052, 13.109658)">
                             <g />
                         </g>
@@ -810,7 +809,7 @@ export const Logo = ({ color }) =>
                             <g />
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(44.016287, 13.109658)">
                             <g>
                                 <path d="M 0 0.390625 L 0 0.09375 L 2.5 0.09375 L 2.5 0.390625 Z M 0 0.390625 " />
@@ -832,7 +831,7 @@ export const Logo = ({ color }) =>
                             </g>
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(54.012646, 13.109658)">
                             <g />
                         </g>
@@ -846,7 +845,7 @@ export const Logo = ({ color }) =>
                             <g />
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(64.009, 13.109658)">
                             <g>
                                 <path d="M 0 0.390625 L 0 0.09375 L 2.5 0.09375 L 2.5 0.390625 Z M 0 0.390625 " />
@@ -868,7 +867,7 @@ export const Logo = ({ color }) =>
                             </g>
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(74.005358, 13.109658)">
                             <g />
                         </g>
@@ -882,7 +881,7 @@ export const Logo = ({ color }) =>
                             <g />
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(84.001713, 13.109658)">
                             <g>
                                 <path d="M 0 0.390625 L 0 0.09375 L 2.5 0.09375 L 2.5 0.390625 Z M 0 0.390625 " />
@@ -899,7 +898,7 @@ export const Logo = ({ color }) =>
                             </g>
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(91.503033, 13.109658)">
                             <g />
                         </g>
@@ -916,7 +915,7 @@ export const Logo = ({ color }) =>
                             <g />
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(103.999828, 13.109658)">
                             <g>
                                 <path d="M 0 0.390625 L 0 0.09375 L 2.5 0.09375 L 2.5 0.390625 Z M 0 0.390625 " />
@@ -933,7 +932,7 @@ export const Logo = ({ color }) =>
                             </g>
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(111.501144, 13.109658)">
                             <g />
                         </g>
@@ -944,7 +943,7 @@ export const Logo = ({ color }) =>
                             <g />
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(119.002464, 13.109658)">
                             <g />
                         </g>
@@ -952,7 +951,7 @@ export const Logo = ({ color }) =>
                             <g />
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(124.003342, 13.109658)">
                             <g>
                                 <path d="M 0 0.390625 L 0 0.09375 L 2.5 0.09375 L 2.5 0.390625 Z M 0 0.390625 " />
@@ -969,7 +968,7 @@ export const Logo = ({ color }) =>
                             </g>
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(131.504658, 13.109658)">
                             <g />
                         </g>
@@ -983,7 +982,7 @@ export const Logo = ({ color }) =>
                             <g />
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(141.501016, 13.109658)">
                             <g>
                                 <path d="M 0 0.390625 L 0 0.09375 L 2.5 0.09375 L 2.5 0.390625 Z M 0 0.390625 " />
@@ -1000,7 +999,7 @@ export const Logo = ({ color }) =>
                             </g>
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(149.002332, 13.109658)">
                             <g />
                         </g>
@@ -1014,7 +1013,7 @@ export const Logo = ({ color }) =>
                             <g />
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(158.998691, 13.109658)">
                             <g>
                                 <path
@@ -1042,7 +1041,7 @@ export const Logo = ({ color }) =>
                             </g>
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(171.495486, 13.109658)">
                             <g />
                         </g>
@@ -1059,7 +1058,7 @@ export const Logo = ({ color }) =>
                             <g />
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(183.992282, 13.109658)">
                             <g>
                                 <path d="M 0 0.390625 L 0 0.09375 L 2.5 0.09375 L 2.5 0.390625 Z M 0 0.390625 " />
@@ -1071,7 +1070,7 @@ export const Logo = ({ color }) =>
                             </g>
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(188.99316, 13.109658)">
                             <g />
                         </g>
@@ -1085,7 +1084,7 @@ export const Logo = ({ color }) =>
                             <g />
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(198.989515, 13.109658)">
                             <g>
                                 <path d="M 0 0.390625 L 0 0.09375 L 2.5 0.09375 L 2.5 0.390625 Z M 0 0.390625 " />
@@ -1107,7 +1106,7 @@ export const Logo = ({ color }) =>
                             </g>
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(208.985873, 13.109658)">
                             <g />
                         </g>
@@ -1127,7 +1126,7 @@ export const Logo = ({ color }) =>
                             <g />
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(223.983107, 13.109658)">
                             <g>
                                 <path d="M 0 0.390625 L 0 0.09375 L 2.5 0.09375 L 2.5 0.390625 Z M 0 0.390625 " />
@@ -1144,7 +1143,7 @@ export const Logo = ({ color }) =>
                             </g>
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(231.484426, 13.109658)">
                             <g />
                         </g>
@@ -1158,7 +1157,7 @@ export const Logo = ({ color }) =>
                             <g />
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(241.480781, 13.109658)">
                             <g>
                                 <path d="M 0 0.390625 L 0 0.09375 L 2.5 0.09375 L 2.5 0.390625 Z M 0 0.390625 " />
@@ -1175,7 +1174,7 @@ export const Logo = ({ color }) =>
                             </g>
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(248.9821, 13.109658)">
                             <g />
                         </g>
@@ -1192,7 +1191,7 @@ export const Logo = ({ color }) =>
                             <g />
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(261.478896, 13.109658)">
                             <g>
                                 <path d="M 0 0.390625 L 0 0.09375 L 2.5 0.09375 L 2.5 0.390625 Z M 0 0.390625 " />
@@ -1227,7 +1226,7 @@ export const Logo = ({ color }) =>
                             </g>
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(278.97657, 13.109658)">
                             <g />
                         </g>
@@ -1241,7 +1240,7 @@ export const Logo = ({ color }) =>
                             <g />
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(1.530422, 17.948521)">
                             <g>
                                 <path
@@ -1270,7 +1269,7 @@ export const Logo = ({ color }) =>
                             </g>
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(14.027218, 17.948521)">
                             <g />
                         </g>
@@ -1278,7 +1277,7 @@ export const Logo = ({ color }) =>
                             <g />
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(19.028096, 17.948521)">
                             <g>
                                 <path
@@ -1314,7 +1313,7 @@ export const Logo = ({ color }) =>
                             </g>
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(34.025331, 17.948521)">
                             <g />
                         </g>
@@ -1325,7 +1324,7 @@ export const Logo = ({ color }) =>
                             <g />
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(41.526649, 17.948521)">
                             <g>
                                 <path
@@ -1361,7 +1360,7 @@ export const Logo = ({ color }) =>
                             </g>
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(56.523884, 17.948521)">
                             <g />
                         </g>
@@ -1369,7 +1368,7 @@ export const Logo = ({ color }) =>
                             <g />
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(61.524763, 17.948521)">
                             <g>
                                 <path
@@ -1405,7 +1404,7 @@ export const Logo = ({ color }) =>
                             </g>
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(76.521999, 17.948521)">
                             <g />
                         </g>
@@ -1413,7 +1412,7 @@ export const Logo = ({ color }) =>
                             <g />
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(81.522878, 17.948521)">
                             <g>
                                 <path
@@ -1484,7 +1483,7 @@ export const Logo = ({ color }) =>
                             </g>
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(116.512824, 17.948521)">
                             <g />
                         </g>
@@ -1492,7 +1491,7 @@ export const Logo = ({ color }) =>
                             <g />
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(121.513702, 17.948521)">
                             <g>
                                 <path
@@ -1561,7 +1560,7 @@ export const Logo = ({ color }) =>
                             </g>
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(154.003211, 17.948521)">
                             <g />
                         </g>
@@ -1569,7 +1568,7 @@ export const Logo = ({ color }) =>
                             <g />
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(159.004089, 17.948521)">
                             <g>
                                 <path
@@ -1603,7 +1602,7 @@ export const Logo = ({ color }) =>
                             </g>
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(174.001326, 17.948521)">
                             <g />
                         </g>
@@ -1611,7 +1610,7 @@ export const Logo = ({ color }) =>
                             <g />
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(179.002205, 17.948521)">
                             <g>
                                 <path
@@ -1684,7 +1683,7 @@ export const Logo = ({ color }) =>
                             </g>
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(211.491713, 17.948521)">
                             <g />
                         </g>
@@ -1698,7 +1697,7 @@ export const Logo = ({ color }) =>
                             <g />
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(221.488068, 17.948521)">
                             <g>
                                 <path
@@ -1826,7 +1825,7 @@ export const Logo = ({ color }) =>
                             </g>
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(283.966648, 17.948521)">
                             <g />
                         </g>
@@ -1834,12 +1833,12 @@ export const Logo = ({ color }) =>
                             <g />
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(1.546624, 22.787384)">
                             <g />
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(4.047063, 22.787384)">
                             <g>
                                 <path
@@ -2217,7 +2216,7 @@ export const Logo = ({ color }) =>
                             </g>
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(181.486442, 22.787384)">
                             <g />
                         </g>
@@ -2225,7 +2224,7 @@ export const Logo = ({ color }) =>
                             <g />
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(186.487321, 22.787384)">
                             <g>
                                 <path d="M 0 0.390625 L 0 0.09375 L 2.5 0.09375 L 2.5 0.390625 Z M 0 0.390625 " />
@@ -2438,17 +2437,17 @@ export const Logo = ({ color }) =>
                             </g>
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(286.450885, 22.787384)">
                             <g />
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(1.546624, 27.626247)">
                             <g />
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(4.047063, 27.626247)">
                             <g>
                                 <path d="M 0 0.390625 L 0 0.09375 L 2.5 0.09375 L 2.5 0.390625 Z M 0 0.390625 " />
@@ -3038,7 +3037,7 @@ export const Logo = ({ color }) =>
                             </g>
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(1.535823, 32.46511)">
                             <g>
                                 <path
@@ -3159,7 +3158,7 @@ export const Logo = ({ color }) =>
                             </g>
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(56.518485, 32.46511)">
                             <g />
                         </g>
@@ -3167,7 +3166,7 @@ export const Logo = ({ color }) =>
                             <g />
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(61.519364, 32.46511)">
                             <g>
                                 <path
@@ -3202,7 +3201,7 @@ export const Logo = ({ color }) =>
                             </g>
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(76.516597, 32.46511)">
                             <g />
                         </g>
@@ -3210,7 +3209,7 @@ export const Logo = ({ color }) =>
                             <g />
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(81.517475, 32.46511)">
                             <g>
                                 <path
@@ -3245,7 +3244,7 @@ export const Logo = ({ color }) =>
                             </g>
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(96.514712, 32.46511)">
                             <g />
                         </g>
@@ -3253,7 +3252,7 @@ export const Logo = ({ color }) =>
                             <g />
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(101.515591, 32.46511)">
                             <g>
                                 <path
@@ -3372,7 +3371,7 @@ export const Logo = ({ color }) =>
                             </g>
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(153.997812, 32.46511)">
                             <g />
                         </g>
@@ -3380,7 +3379,7 @@ export const Logo = ({ color }) =>
                             <g />
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(158.998691, 32.46511)">
                             <g>
                                 <path
@@ -3589,7 +3588,7 @@ export const Logo = ({ color }) =>
                             </g>
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(253.966775, 32.46511)">
                             <g />
                         </g>
@@ -3597,7 +3596,7 @@ export const Logo = ({ color }) =>
                             <g />
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(258.967654, 32.46511)">
                             <g>
                                 <path
@@ -3668,7 +3667,7 @@ export const Logo = ({ color }) =>
                             </g>
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(1.546624, 37.303973)">
                             <g>
                                 <path
@@ -3711,7 +3710,7 @@ export const Logo = ({ color }) =>
                             </g>
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(21.539337, 37.303973)">
                             <g />
                         </g>
@@ -4034,12 +4033,12 @@ export const Logo = ({ color }) =>
                             <g />
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(1.546624, 42.142836)">
                             <g />
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(4.047063, 42.142836)">
                             <g>
                                 <path
@@ -4074,7 +4073,7 @@ export const Logo = ({ color }) =>
                             </g>
                         </g>
                     </g>
-                    <g fill="#000000" fillOpacity="1">
+                    <g fill="currentColor" fillOpacity="1">
                         <g transform="translate(19.044298, 42.142836)">
                             <g />
                         </g>

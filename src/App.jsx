@@ -1,12 +1,17 @@
 import './App.css'
-import { Logo } from './components/logo'
+import { Header } from './components/Header'
+import { Main } from './components/Main'
 
 function App()
 {
 
   return (
     <>
-      <Logo color='#d0d0d0' />
+      <Header />
+      <Main />
+      <footer>
+        Copyright
+      </footer>
     </>
   )
 }
